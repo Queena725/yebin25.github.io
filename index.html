@@ -3,7 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Forest Effect</title>
+  <title>Forest</title>
+  
+  <nav>
+    <ul>
+      <li class="dropdown">
+        <a href="#">Poems</a>
+        <ul class="dropdown-menu">
+          <li><a href="poem.html">Poem 1</a></li>
+          <li><a href="poem2.html">Poem 2</a></li>
+          <li><a href="poem3.html">Poem 3</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
   
   
   <link rel="stylesheet" href="forest1.css">
@@ -11,8 +24,7 @@
 <body>
  
   <a class="info-link" href="info page.html" target="_blank">Info</a>
-
-
+ 
   <div class="container">
     <span class="fragment">F</span>
     <span class="fragment">O</span>
@@ -21,55 +33,116 @@
     <span class="fragment">S</span>
     <span class="fragment">T</span>
   </div>
+  
 
+  <div class="dot-navigation">
+    <div class="dot"></div>
+    <div class="dot second-dot"></div> <!-- Second dot -->
+  </div>
+  
+  
 
   <div class="spacer"></div>
 
- 
-  <div class="image-container">
-    <img src="images/for1.jpg" alt="Forest Image">
+  <div class="image-container-1">
+  <img src="images/for1.jpg" alt="Forest Image" class="overlay-image">
+  <div class="text-overlay">
+    <p>One touch of nature makes</p>
+    <p>the whole world <span class="hover-word">kin…</span></p>
   </div>
+</div>
 
+  
  
   <script src="forest1.js"></script>
 
   <div class="spacer-paragraph"></div>
  
- <p> 
-  One touch of nature makes </p> <p>the whole world kin…
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const paragraphs = document.querySelectorAll("p");
   
- </p>
+      const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add("reveal");
+              }
+          });
+      }, { threshold: 0.5 }); 
+  
+      paragraphs.forEach(p => observer.observe(p));
+  });
+  </script>
  
  <spacer-paragraph>— TROILUS AND CRESSIDA, ACT 3 SCENE 3, SHAKESPEARE  </spacer-paragraph>
 
+ <section>
+  <div class="actions">
+    <a href="https://www.shakespeare.org.uk/explore-shakespeare/shakespedia/shakespeare-quotes-theme/shakespeare-quotes-environment/"
+      rel="noreferrer noopener">
+      <span>click to discover more quotes</span>
+    </a>
+  </div>
+</section>
 
- <div class="fadein">
-  <img src="images/Photo__Noora.jpg" alt="">
+<h2>Three Poems on Nature</h2>
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="spacer"></div>
 
 
+  <div class="image-gallery">
+    <div class="image-container">
+        <a href="poem.html">
+            <img src="images/kin.jpeg" alt="Image 1">
+        </a>
+        <div class="image-title"> The Peace Of Wild Things</div>  <!-- 제목 추가 -->
+    </div>
+    <div class="image-container">
+        <a href="poem2.html">
+            <img src="images/Noora.png" alt="Image 2">
+        </a>
+        <div class="image-title">Sleeping In The Forest</div>  <!-- 제목 추가 -->
+    </div>
+    <div class="image-container">
+        <a href="poem3.html">
+            <img src="images/running.jpeg" alt="Image 3">
+        </a>
+        <div class="image-title">The Way Through The Woods</div>  <!-- 제목 추가 -->
+    </div>
+</div>
+
+<div class="spacer"></div><div class="spacer"></div>
+<div class="spacer"></div>
+
+
+
+<div class="spacer"></div>
+
+<p class="p1">
+  <span class="typing-sentence">This collection features three poems: 'The Peace of Wild Things' by Wendell Berry, which reflects on finding solace in nature.</span>
+  <span class="typing-sentence">'Sleeping in the Forest' by Mary Oliver, a meditation on rest and renewal amidst the quiet of the woods.</span>
+  <span class="typing-sentence">Finally, 'The Way Through the Woods' by Rudyard Kipling, which reminds us of nature’s permanence even when human presence fades.</span>
+</p>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+<div class="footer">
+    <a href="mailto:leeq370@newschool.edu"> Mail me</a>
+</div>
+<div class="spacer"></div>
+ 
+  </div>
+</div>
+
+
+   </a>
 
 </div>
 
-<div class="poem">
-  <h1>The Peace of Wild Things
 
-  </h1>
-  <h2>by Wendell Berry</h2>
-  <ul>
-  <li> When despair for the world grows in me </il>
-  
-  <li>and I wake in the night at the least sound</li>
-  <li>in fear of what my life and my children’s lives may be,</li>
-  <li> rests in his beauty on the water, and the great heron feeds. </li>
-    <li> I go and lie down where the wood drake</li>
-    <li>I come into the peace of wild things</li>
-    <li> who do not tax their lives with forethought</li>
-      <li>of grief. I come into the presence of still water.</li>
-      <li>And I feel above me the day-blind stars</li> 
-      <li>waiting with their light. For a time </li>
-      <li>I rest in the grace of the world, and am free.</li>
-  
-    </ul>
+
   
   </div>
 
