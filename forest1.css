@@ -1,4 +1,43 @@
-/* 네비게이션 스타일 */
+/* iPhone SE (320px width) */
+@media (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+/* iPhone 12/13 Mini and older devices (375px width) */
+@media (max-width: 375px) {
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+
+/* iPhone 12/13/14 Pro/Regular (390px width) */
+@media (max-width: 390px) {
+    body {
+        font-size: 17px;
+    }
+    .container {
+        padding: 25px;
+    }
+}
+
+/* Larger phones (e.g., iPhone 12/13 Pro Max, 428px width) */
+@media (max-width: 428px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        padding: 30px;
+    }
+}
+
 nav {
   background-color: #000000;
   padding: 10px;
