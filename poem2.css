@@ -1,4 +1,75 @@
- /* Set the background color of the entire page */
+@media (max-width: 768px) {
+    html, body {
+        width: 100vw; /* 가로폭 고정 */
+        height: 100vh;
+        overflow-x: hidden; /* 가로 스크롤 방지 */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        font-size: 10pt;
+        line-height: 1.4;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* 상단부터 배치 */
+        padding-top: 20px;
+    }
+
+    h1, h2 {
+        font-size: 14pt;
+        text-align: center;
+        width: 90%;
+        margin: 10px auto;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    .poem {
+        max-width: 90%;
+        width: 100%;
+        margin: 20px auto;
+        padding: 15px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .poem ul {
+        display: flex;
+        flex-direction: column; /* 가로 정렬 → 세로 정렬 */
+        align-items: center;
+    }
+
+    .poem li {
+        font-size: 12pt;
+        line-height: 1.6;
+        text-align: left;
+        padding: 5px 10px;
+        width: 100%;
+        word-wrap: break-word;
+        white-space: normal;
+    }
+
+    .wave-text {
+        display: flex;
+        flex-wrap: wrap; /* 자동 줄바꿈 */
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .wave-text span {
+        font-size: 2rem;
+    }
+
+    /* 텍스트 크기 조정 */
+    .poem li span.woods.wind-effect span {
+        transform: scale(0.8);
+    }
+}
 body {
     background-color: #000000;
     font-family: Baskerville, serif;
@@ -14,19 +85,19 @@ body {
     justify-content: center;
 }
 
-/* Poem section styling */
+
 .poem {
-    padding: 40px; /* 적당한 여백 */
+    padding: 40px; 
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 더 강한 그림자 효과 */
-    max-width: 70%; /* 콘텐츠 폭을 유동적으로 조정 */
-    margin: 0 auto; /* 중앙 정렬 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    max-width: 70%; 
+    margin: 0 auto; 
     text-align: left;
     position: relative;
-    font-size: 14pt; /* 조금 더 큰 글씨 */
-    line-height: 1.8; /* 줄 간격 조정 */
-    display: inline-block; /* 유연한 배치를 위해 inline-block 사용 */
-    vertical-align: top; /* 이미지와의 정렬 */
+    font-size: 14pt; 
+    line-height: 1.8; 
+    display: inline-block; 
+    vertical-align: top; 
 }
 
 
