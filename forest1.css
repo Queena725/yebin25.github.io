@@ -15,6 +15,15 @@ body {
   overflow-x: hidden;
 }
 
+/* Font-face to ensure Punto is loaded */
+@font-face {
+  font-family: 'Punto';
+  src: url('path/to/punto.woff2') format('woff2'),
+       url('path/to/punto.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Responsive typography for all screens */
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'Punto', sans-serif;
