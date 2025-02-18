@@ -1,71 +1,53 @@
-
-@media (max-width: 768px) {
+@media (max-width: 430px) {
     
- 
+    /* 전체 폰트 크기 조정 */
+    body {
+        font-size: 14px; /* 기본 글자 크기 줄이기 */
+        overflow-x: hidden; /* 가로 스크롤 방지 */
+    }
+
+    /* 제목 크기 조정 */
     h1 {
-        font-size: 14pt;
-        line-height: 1.2;
-        margin: 5px auto 15px;
-        padding: 8px;
+        font-size: 12pt;
+        margin: 5px auto;
+        padding: 5px;
     }
 
     h2 {
-        font-size: 16px;
-        margin-bottom: 15px;
+        font-size: 14px;
         text-align: center;
     }
 
-   
+    /* wave-text 중앙 정렬 */
     .wave-text {
-        display: block; 
         text-align: center;
-        white-space: normal; 
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
+        white-space: normal;
+        margin: 10px auto;
     }
 
     .wave-text span {
-        font-size: 3rem; 
-        display: inline-block;
+        font-size: 2.5rem; /* 모바일에서 글씨 크기 더 축소 */
     }
 
-    
+    /* 시(詩) 리스트 정렬 */
     .poem {
-        max-width: 95%;
-        padding: 20px;
+        max-width: 90%;
+        padding: 15px;
         margin: auto;
     }
 
-    
     .poem li {
-        font-size: 16px; /* 글자 크기 축소 */
+        font-size: 14px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        transform: none; /* left 값 제거 */
-    }
-
-    
-    .poem li span.woods.wind-effect span:hover {
-        animation: blow-away-mobile 3s forwards;
-    }
-
-    @keyframes blow-away-mobile {
-        0% {
-            transform: translate(0, 0) rotate(0deg);
-            opacity: 1; 
-        }
-        50% {
-            transform: translate(20px, -5px) rotate(5deg); 
-            opacity: 0.8;
-        }
-        100% {
-            transform: translate(80px, -20px) rotate(15deg); 
-            opacity: 0; 
-        }
     }
 }
+
+
+
+
+
 
 h1 {
     font-family: 'Punto', sans-serif;
