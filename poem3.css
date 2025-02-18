@@ -1,7 +1,7 @@
 
 @media (max-width: 768px) {
     
-    /* 제목 크기 줄이기 */
+ 
     h1 {
         font-size: 14pt;
         line-height: 1.2;
@@ -15,29 +15,29 @@
         text-align: center;
     }
 
-    /* wave-text (애니메이션) 정렬 조정 */
+   
     .wave-text {
-        display: block; /* 한 줄이 아닌 블록으로 변경 */
+        display: block; 
         text-align: center;
-        white-space: normal; /* 줄바꿈 허용 */
+        white-space: normal; 
         margin-top: 20px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .wave-text span {
-        font-size: 3rem; /* 글자 크기 줄이기 */
+        font-size: 3rem; 
         display: inline-block;
     }
 
-    /* 시(詩) 리스트가 화면 안에서 벗어나지 않도록 조정 */
+    
     .poem {
         max-width: 95%;
         padding: 20px;
         margin: auto;
     }
 
-    /* 시의 개별 요소 정렬 */
+    
     .poem li {
         font-size: 16px; /* 글자 크기 축소 */
         text-align: center;
@@ -46,7 +46,7 @@
         transform: none; /* left 값 제거 */
     }
 
-    /* 애니메이션으로 날아가는 효과 조정 */
+    
     .poem li span.woods.wind-effect span:hover {
         animation: blow-away-mobile 3s forwards;
     }
