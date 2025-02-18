@@ -16,7 +16,7 @@ body {
 }
 
 /* Responsive typography for all screens */
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, p1, a {
   font-family: 'Punto', sans-serif;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 
   nav a {
     padding: 10px;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .container {
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 28px;
     padding-left: 0;
     text-align: center;
   }
@@ -57,15 +57,16 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 
   .text-overlay {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.4;
   }
 
-  p1 {
-    font-size: 0.9rem;
-    line-height: 1.5;
+  p, p1 {
+    font-size: 14px;
+    line-height: 1.6;
     word-wrap: break-word;
     overflow-wrap: break-word;
+    white-space: normal;
   }
 }
 
@@ -80,7 +81,7 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 36px;
     padding-left: 0;
     text-align: center;
   }
