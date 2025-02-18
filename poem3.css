@@ -1,13 +1,4 @@
-html, body {
-    width: 100vw; /* 가로 폭을 강제 조정하여 넘치는 것 방지 */
-    height: 100%;
-    overflow-x: hidden; /* 가로 스크롤 차단 */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* 요소들이 세로로 정렬되도록 설정 */
-    align-items: center; /* 중앙 정렬 */
-}
+
 
 /* 📱 모바일 화면 조정 */
 @media (max-width: 430px) {
@@ -15,50 +6,6 @@ html, body {
         font-size: 12px; /* 가독성을 위해 12px로 설정 */
         line-height: 1.5;
     }
-
-    h1, h2 {
-        font-size: 14px; /* 제목이 잘리지 않도록 크기 조정 */
-        text-align: center;
-        width: 90%; /* 화면에 맞게 줄어들도록 설정 */
-        margin: 10px auto;
-        word-wrap: break-word;
-        white-space: normal;
-    }
-
-    .wave-text {
-        display: flex;
-        flex-wrap: wrap; /* 글자가 너무 길면 줄 바꿈되도록 설정 */
-        width: 100%;
-        justify-content: center; /* 중앙 정렬 */
-        margin: auto;
-    }
-
-    .wave-text span {
-        font-size: 1.6rem; /* 줄바꿈되도록 크기 조정 */
-    }
-
-    .poem {
-        max-width: 90%;
-        width: 100%;
-        margin: 0 auto;
-        padding: 15px;
-        overflow: visible; /* 내용이 짤리지 않도록 수정 */
-        text-align: left;
-        display: flex;
-        flex-direction: column; /* 세로 정렬 */
-    }
-
-    .poem li {
-        font-size: 12px;
-        line-height: 1.6;
-        text-align: left;
-        padding: 5px 10px;
-        width: 100%;
-        display: block; /* 가로로 퍼지지 않도록 강제 설정 */
-        word-wrap: break-word;
-        white-space: normal;
-    }
-}
 
 
 
