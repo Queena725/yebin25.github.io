@@ -4,53 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    
-  
     <link rel="stylesheet" href="infopage.css">
+    <video autoplay muted loop id="background-video">
+        <source src="images/b1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
     
     <style>
-     
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            color: aliceblue;
+            font-weight: 20;
+        }
+
         a:link, a:visited {
             text-decoration: none;
             color: aliceblue;
-        }
-
-      
-        body {
-            background-color: rgb(0, 0, 0);
-            color: aliceblue;
             font-family: 'Punto', sans-serif;
-            margin: 0;
-            padding: 0;
-            overflow-x: hidden;
         }
 
-       
+    
         .home-link {
             position: fixed;
             top: 10px;
             right: 10px;
             text-decoration: none;
+            font-family: 'Punto', sans-serif;
             font-size: 1.2rem;
             color: aliceblue;
-            transition: font-size 0.2s ease;
+            transition: font-size 0.2s ease, transform 0.2s ease;
         }
 
         .home-link:hover {
             font-size: 1.5rem;
+            transform: scale(1.1);
         }
 
-      
+        
         .content {
             margin: 20px;
+            padding: 20px;
         }
 
         p {
             font-size: 14px;
-            color: white;
             line-height: 1.6;
-            text-align: left;
             margin: 1em 0;
+            transition: opacity 0.5s ease;
         }
 
         .p1 {
@@ -64,32 +67,78 @@
 
         .p3 {
             font-size: 14px;
-            font-style: normal;
         }
 
-      
         .spacer-paragraph {
             font-family: Georgia, serif;
             font-size: 14px;
-            text-align: left;
             color: white;
             margin-bottom: 1em;
+        }
+
+      
+        .forest-section {
+            margin: 40px auto;
+            padding: 20px;
+            
+            border-radius: 0%;
+            text-align: left;
+            max-width: 800px;
+        }
+
+        .forest-section h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: aliceblue;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .forest-section p {
+            font-size: 1.2rem;
+            color: #ffffff;
+            line-height: 1.8;
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        
+        .forest-section h1:hover,
+        .forest-section p:hover {
+            opacity: 0; 
+            transform: translateY(-10px); 
+        }
+
+        @media (max-width: 768px) {
+            .forest-section h1 {
+                font-size: 1.5rem;
+            }
+
+            .forest-section p {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <a href="forest.html" class="home-link">Home</a>
+    <a href="index.html" class="home-link">Home</a>
 
 
     <div class="content">
-        <p>About.</p>
+        <h1>About</h1>
         <div class="spacer-paragraph"> 
-            <span class="p1">Unit 1 Assignment: Something from Nothing</span>
-            <span class="p2">This project involves creating a website that republishes an existing text with a playful and engaging “cover.” The goal is to strongly visualize a conceptual idea through the creative use of typography.</span>
-            <span class="p3">The conceptual direction originates from the single word "landscape", chosen through a collaborative class process. The focus is on expressing the essence of this word, specifically "forest", by transforming it into a visual and typographic experience that both captivates and communicates.</span>
+            <p class="p1">Unit 1 Assignment: Something from Nothing</p>
+            <p class="p2">This project involves creating a website that republishes an existing text with a playful and engaging “cover.” The goal is to strongly visualize a conceptual idea through the creative use of typography.</p>
+            <p class="p3">The conceptual direction originates from the single word "landscape", chosen through a collaborative class process. The focus is on expressing the essence of this word, specifically "forest", by transforming it into a visual and typographic experience that both captivates and communicates.</p>
         </div>
+    </div>
+
+    <div class="forest-section">
+        
+        <h1>Forest</h1>
+        <p class="wind-blow-text">A living tapestry where nature and human intertwine.</p>
+        <p>The relationship between humans and forests is deep and complex, shaped by centuries of living together and influencing one another. A forest is more than just trees—it’s a living, breathing space that provides peace, renewal, and a sense of timelessness. Through literature and poetry, this bond comes to life, showing how humans find comfort in nature’s quiet embrace and leave their stories and histories within its landscapes.</p>
     </div>
 </body>
 </html>
