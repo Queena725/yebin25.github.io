@@ -1,97 +1,118 @@
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
 
 body {
-    background-color: rgb(0, 0, 0);
-    color: aliceblue;
-    font-family: 'Punto', sans-serif;
+
+    background-size: cover;
+    background-color:transparent;
+    font-family: 'Libre Baskerville', serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    min-height: 100vh;
+    font-weight:bolder ;
 }
 
 
-.home-link {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: aliceblue;
-    transition: font-size 0.2s ease;
+.wind-blow-text {
+    display: inline-block; 
+    animation: wind-blow 3s infinite ease-in-out;
 }
 
-.home-link:hover {
-    font-size: 1.5rem;
+@keyframes wind-blow {
+    0%, 100% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(-5px) rotate(-2deg);
+    }
+    50% {
+        transform: translateX(5px) rotate(2deg);
+    }
+    75% {
+        transform: translateX(-3px) rotate(-1deg);
+    }
 }
 
-
-p {
-    font-family: Georgia, serif;
-    font-size: 1.8rem;
-    line-height: 1.6;
-    max-width: 40em;
-    margin: 1.5em auto;
-    text-align: center;
-    font-style: italic;
-    color: #ccc; 
-}
-
-
-spacer-paragraph {
-    font-family: Georgia, serif;
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #aaa; 
-    display: block;
-    text-align: center;
-    margin: 1em auto;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-spacer-paragraph.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-
-body {
-   
-    color: white; 
-    font-family: 'Punto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-
-p, p1, p2, p3, spacer-paragraph {
-    font-size: 14px; 
-    color: white;
-    line-height: 1.6; 
-    margin: 1em 0; 
-    text-align: left; 
-}
-p1 {
-    font-weight: bold;
-    font-size: 16px; 
-}
-
-p2 {
-    font-style: italic; 
-}
-
-p3 {
-    font-size: 14px;
-    font-style: normal; 
-}
-
-
-spacer-paragraph {
-    font-family: Georgia, serif;
-    font-size: 14px;
+ 
+.content {
+    max-width: 800px;
+    padding: 40px;
+    margin: 0 auto;
     text-align: left;
-    color: white;
-    margin-bottom: 1em;
+    display: block;
 }
 
+.spacer-paragraph {
+    margin-bottom: 2rem;
+}
+
+.forest-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: transparent;
+    border-radius: 0px;
+    position: relative;
+    background-image: url('images/.JPG'); 
+    background-size: cover; 
+    background-position: center; 
+    overflow: hidden; 
+    color: white; 
+}
+
+
+
+.forest-section h1, .forest-section p {
+    position: relative;
+    z-index: 2; 
+}
+
+
+.forest-section h1 {
+    font-family: 'Punto', sans-serif;
+    font-size: 2rem;
+    font-weight: 0;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.forest-section .p4, .forest-section .p5 {
+    font-family: 'Punto', sans-serif;
+    font-size: 1.3rem;
+    color: #cccccc;
+    font-weight: 0;
+    margin-bottom: 1rem;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+.forest-section h1:hover, 
+.forest-section .p4:hover, 
+.forest-section .p5:hover {
+    opacity: 0;
+    transform: translateY(-10px); 
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    .forest-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .forest-section .p4, .forest-section .p5 {
+        font-size: 1.1rem;
+    }
+}
