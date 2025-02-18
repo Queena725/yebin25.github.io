@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="poem2.css">
+    <title>Poem 2</title>
+    <style>
+ 
+        .hover-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            position: relative;
+        }
+
+        .poem ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .poem li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .poem li:hover {
+            color: #262e26; 
+        }
+
+        .hover-images {
+            position: relative;
+            width: 350px;
+            height: 350px;
+        }
+
+        .hover-images img {
+            display: none; 
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: contain;
+            border-radius: 0px;
+            box-shadow: transparent;
+        }
+
+        .hover-images img[data-active="true"] {
+            display: block; 
+        }
+      
+    </style>
+</head>
+<body>
+
+    <div class="wave-container">
+        <h1 class="wave-text">
+            <span>Sleep</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+            <span>in</span>
+            <span>the</span>
+            <span>For</span>
+            <span>est</span>
+         
+        </h1>
+    </div>
+   
+    <h2>by Mary Oliver</h2>
+    <div class="hover-container">
+        <div class="poem">
+            <ul>
+                <li onmouseover="showImage('image1')">I thought the earth remembered me,</li>
+                <li onmouseover="showImage('image2')">she took me back so tenderly,</li>
+                <li onmouseover="showImage('image3')">full of lichens and seeds.</li>
+                <li onmouseover="showImage('image4')">I slept as never before, a stone on the river bed,</li>
+                <li onmouseover="showImage('image5')">nothing between me and the white fire of the stars</li>
+                <li onmouseover="showImage('image6')">but my thoughts, and they floated light as moths</li>
+                <li onmouseover="showImage('image7')">among the branches of the perfect trees.</li>
+                <li onmouseover="showImage('image8')">All night I heard the small kingdoms</li>
+                <li onmouseover="showImage('image9')">breathing around me, the insects,</li>
+                <li onmouseover="showImage('image10')">and the birds who do their work in the darkness.</li>
+                <li onmouseover="showImage('image11')">All night I rose and fell, as if in water,</li>
+                <li onmouseover="showImage('image12')">grappling with a luminous doom. By morning</li>
+                <li onmouseover="showImage('image13')">I had vanished at least a dozen times</li>
+                <li onmouseover="showImage('image14')">into something better.</li>
+            </ul>
+        </div>
+        <div class="hover-images">
+            <img id="image1" src="images/hand.jpeg" alt="Earth">
+            <img id="image2" src="images/bg6.jpeg" alt="Pond">
+            <img id="image3" src="images/3.jpeg" alt="Plant">
+            <img id="image4" src="images/4.jpeg" alt="">
+            <img id="image5" src="images/5.png" alt="">
+            <img id="image6" src="images/6.jpeg" alt="">
+            <img id="image7" src="images/7.jpeg" alt="">
+            <img id="image8" src="images/night.jpeg" alt="">
+            <img id="image9" src="images/i.png" alt="">
+            <img id="image10" src="images/owl.jpeg" alt="">
+            <img id="image11" src="images/rose.jpeg" alt="">
+            <img id="image12" src="images/morning.jpeg" alt="">
+            <img id="image13" src="images/one.jpeg" alt="">
+            <img id="image14" src="images/14.jpeg" alt="">
+
+  
+        </div>
+    </div>
+
+    <script>
+        function showImage(imageId) {
+            const images = document.querySelectorAll('.hover-images img');
+            images.forEach(img => img.setAttribute('data-active', 'false'));
+            const activeImage = document.getElementById(imageId);
+            if (activeImage) {
+                activeImage.setAttribute('data-active', 'true');
+            }
+        }
+    </script>
+
+
+
+<div class="button-container">
+    <button onclick="history.back()">Go Back</button>
+    <a href="poem3.html">Next Page</a>
+</div>
+
+</body>
+</html>
