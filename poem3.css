@@ -1,55 +1,61 @@
- html, body {
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📱 모바일 화면 조정 */
+@media (max-width: 430px) {
+    body {
+        font-size: 10px; /* 폰트 너무 작으면 가독성 떨어짐 → 10px로 수정 */
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 14px; /* 제목 조금 더 키워서 가독성 확보 */
+        margin: 10px auto 15px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 12px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .wave-text {
+        display: block;
         width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-        margin: 0;
-        padding: 0;
+        text-align: center;
+        margin: auto;
     }
-    
-    @media (max-width: 430px) {
-        body {
-            font-size: 12px; /* 폰트 작게 조정 */
-            line-height: 1.4;
-        }
-    
-        h1 {
-            font-size: 14pt;
-            text-align: center;
-        }
-    
-        h2 {
-            font-size: 12pt;
-            text-align: center;
-        }
-    
-        .wave-text {
-            display: block;
-            white-space: normal;
-            text-align: center;
-            margin: auto;
-            width: 100%;
-        }
-    
-        .wave-text span {
-            font-size: 2rem; 
-        }
-    
-        .poem {
-            max-width: 100%;
-            width: 100%;
-            margin: auto;
-            padding: 10px;
-            overflow: hidden;
-            text-align: left; 
-        }
-    
-        .poem li {
-            font-size: 14px;
-            text-align: left;
-            left: 0 !important;
-            width: 100%; 
-        }
+
+    .wave-text span {
+        font-size: 1.8rem; /* 너무 크면 한 줄로 안 나올 수도 있으니 살짝 줄임 */
     }
+
+    .poem {
+        max-width: 90%; /* 너무 꽉 차지 않게 약간 여백 주기 */
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px;
+        overflow: hidden;
+        text-align: left; 
+    }
+
+    .poem li {
+        font-size: 12px;
+        line-height: 1.6;
+        text-align: left;
+        padding: 5px 10px;
+        width: 100%;
+        display: block; /* 가로로 퍼지지 않게 강제 설정 */
+        word-wrap: break-word;
+        white-space: normal;
+    }
+}
 
 
 
