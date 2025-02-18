@@ -30,28 +30,20 @@ h1, h2, h3, h4, h5, h6, p, a {
   }
 
   nav a {
-    padding: 8px;
+    padding: 10px;
     font-size: 14px;
   }
 
   .container {
     padding: 10px;
-    max-width: 50%; /* 가로를 2배 줄임 */
+    max-width: 100%;
     overflow: hidden;
-    margin: 0 auto;
   }
 
   h2 {
     font-size: 24px;
     padding-left: 0;
     text-align: center;
-  }
-
-  p, p1 {
-    font-size: 14px;
-    line-height: 1.6;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
   }
 
   .dot {
@@ -67,6 +59,13 @@ h1, h2, h3, h4, h5, h6, p, a {
   .text-overlay {
     font-size: 0.9rem;
     line-height: 1.4;
+  }
+
+  p1 {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 }
 
@@ -134,16 +133,6 @@ nav a:hover {
 html {
   scroll-behavior: smooth;
 }
-
-/* Punto Font Import */
-@font-face {
-  font-family: 'Punto';
-  src: url('path-to-your-punto-font.woff2') format('woff2'),
-       url('path-to-your-punto-font.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
 
 
 
