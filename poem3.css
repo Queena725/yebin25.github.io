@@ -238,4 +238,5 @@ button, .button-container a {
 button:hover, .button-container a:hover {
     background: transparent;
     transform: scale(1.05);
+    font-family: 'Baskerville', serif;
 }
