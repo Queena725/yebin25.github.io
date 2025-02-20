@@ -232,6 +232,7 @@ button, .button-container a {
     text-decoration: none;
     cursor: pointer;
     margin: 10px;
+    font-family: 'Baskerville', serif;
     transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
