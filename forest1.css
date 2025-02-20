@@ -1,9 +1,19 @@
 @media (max-width: 768px) { 
   h1{font-size:2em;}
   h2 {font-size:1.5em;}
-  P{font-size:1.2em; max-width:90%
-   } }  
-
+  P{font-size:1.2em; max-width:90%} 
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0;
+    flex-direction: column; 
+  }
+  
+  h1, h2, p {
+    text-align: center; 
+  }} 
 
 h1, h2, h3, h4, h5, h6, p, p1, a {
   font-family: 'Punto', sans-serif;
@@ -11,12 +21,7 @@ h1, h2, h3, h4, h5, h6, p, p1, a {
   overflow-wrap: break-word;
 }
 
-/* iPhone 16 Pro (430px width breakpoint) */
-@media (max-width: 430px) {
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
+
 
   nav a {
     padding: 10px;
@@ -38,18 +43,21 @@ h1, h2, h3, h4, h5, h6, p, p1, a {
   }
 
   .dot {
-    width: 4px;
+   
     height: 4px;
+    text-align: center;
   }
 
   .image-container img {
     width: 100%;
     height: auto;
+    align: center;
   }
 
   .text-overlay {
     font-size: 1rem;
     line-height: 1.4;
+    
   }
 
   p, p1 {
@@ -102,7 +110,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Footer styles */
+
 .footer {
   margin-top: 20px;
   width: 100%;
