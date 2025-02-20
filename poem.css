@@ -187,6 +187,7 @@ button, .button-container a {
     border: none;
     border-radius: 8px;
     text-decoration: none;
+    font-family: 'Baskerville', serif;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
@@ -194,4 +195,5 @@ button, .button-container a {
 button:hover, .button-container a:hover {
     background:  #f5f1e3;
     transform: scale(1.08);
+    font-family: 'Baskerville', serif;
 }
