@@ -1,4 +1,4 @@
-@media (max-width: 430px) { 
+@media (max-width: 393px) { 
   h1{font-size:2em;}
   h2 {font-size:1.5em;}
   P{font-size:1.2em; max-width:90%} 
@@ -16,7 +16,7 @@
   }} 
 
 h1, h2, h3, h4, h5, h6, p, p1, a {
-  font-family: 'Punto', sans-serif;
+  font-family: 'Punto', sans-serif !important ; 
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
