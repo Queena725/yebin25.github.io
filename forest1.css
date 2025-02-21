@@ -1,11 +1,11 @@
-@media (max-width: 768px) { 
+@media (max-width: 430px) { 
   h1{font-size:2em;}
   h2 {font-size:1.5em;}
   P{font-size:1.2em; max-width:90%} 
   body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     min-height: 100vh; 
     margin: 0;
     flex-direction: column; 
