@@ -8,7 +8,7 @@ h1 {
     letter-spacing: 1px;
     font-weight: 400;
     text-transform: none;
-    color: 556B2F;
+    color: #A7B49E;
     text-align: center;
     padding: 10px;
     transition: all 1s ease;
@@ -101,7 +101,7 @@ h2 {
 }
 
 body {
-    background-color: #2c241f;
+    background-color: #727D73;
 }
 
 .poem {
@@ -120,7 +120,7 @@ body {
 .poem li {
     font-family: 'Times New Roman', serif;
     padding-bottom: 0.5em;
-    color: rgb(175, 203, 201);
+    color: #A7B49E;
     font-size: 18px;
     margin: 10px 0;
     text-align: left;
@@ -167,7 +167,7 @@ li:first-child::first-letter {
 
 
 n.h1 {
-    color: #e6e6e6; 
+    color: #A7B49E; 
     transition: color 0.3s ease-in-out; 
 }
 
