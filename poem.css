@@ -1,6 +1,16 @@
+
+
+.image-container-1 {
+  position: relative;
+  width: 100%; /* Adjust width as needed */
+  height: 500px; /* Set height for the container */
+  background-image: url('images/for1.jpg'); /* Use the background image */
+  background-size: cover; /* Ensure the image covers the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+}
+
 body {
-background-image: src="images/bd.jpg");
-  <img src="images/for1.jpg";
     font-family: 'Cormorant Garamond', serif;
     color: #333;
 
