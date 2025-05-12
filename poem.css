@@ -176,22 +176,31 @@ p:hover {
     transform: rotate(3deg);
 }
 
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
 button, .button-container a {
-    padding: 8px 20px;
+    font-family: 'Baskerville', serif;
+    display: inline-block;
+    padding: 10px 15px;
     font-size: 1rem;
     font-weight: 500;
-    color: #113931;
-    background:transparent; 
+    color: #fff;
+    background: #000000;
     border: none;
     border-radius: 8px;
     text-decoration: none;
-    font-family: 'Baskerville', serif;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    margin: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
 button:hover, .button-container a:hover {
-    background: transparent; /* Slightly lighter for hover effect */
-    transform: scale(1.08);
     font-family: 'Baskerville', serif;
+    background: #000000;
+    transform: scale(1.05);
 }
+
